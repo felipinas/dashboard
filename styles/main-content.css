@@ -1,0 +1,13 @@
+#main-content {
+    width: calc(100vw - 315px);
+    height: 75%;
+    
+    background-color: white;
+    
+    border-radius: 8px;
+    border: 1px solid #dfe0eb;
+    
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 18px;
+}

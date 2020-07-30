@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main-content.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
  
-    <nav id="menu">
+    <div id="menu">
 
         <div id="div-logo">
 
@@ -23,42 +26,60 @@
 
         </div>
 
-        <label for='overview-checkbox'>
+        <div id="overview" class='option-menu disabled'>
 
-            <div id="overview" class='options-menu disabled'>
+            <img src="imagens/icon/overview.svg" alt="">
 
-                <img src="imagens/icon/overview.svg" alt="">
+            <span>
+                Overview
+            </span>
 
-                <span>
-                    Overview
-                </span>
+        </div>
 
-                <input type="checkbox" name="" id="overview-checkbox">
+
+        <div id="tickets" class='option-menu active'>
+
+            <img src="imagens/icon/tickets.svg" alt="">
+
+            <span>
+                Tickets
+            </span>
+
+        </div>
+
+    </div>
+
+    <div id="painel-global">
+
+        <div id="header">
+
+            <h2>Tickets</h2>
+
+            <div id="info-header">
+
+                <img src="imagens/icon/ search.svg" alt="" class="pointer">
+
+                <img src="imagens/icon/new.svg" alt="" style='margin-left: 24px;' class="pointer">
+
+                <hr>
+
+                <p class="pointer">Jones Ferdinando</p>
+
+                <div >
+                </div>
 
             </div>
 
-        </label>
+        </div>
 
-        <label for='tickets-checkbox'>
+        <div id="main-content">
 
-            <div id="tickets" class='options-menu active'>
+        </div>
 
-                <img src="imagens/icon/tickets.svg" alt="">
-
-                <span>
-                    Tickets
-                </span>
-
-                <input type="checkbox" name="" id="tickets-checkbox">
-
-            </div>
-
-        </label>
-
-    </nav>
-
+    </div>
 
 
     <script src="scripts.js"></script>
+
 </body>
 </html>
