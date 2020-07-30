@@ -4,13 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+ 
+    <nav id="menu">
+
+        <div id="div-logo">
+
+            <img src="imagens/logo.svg" id="logo" alt="">
+
+            <h1>
+                DashBoard Kit
+            </h1>
+
+        </div>
+
+        <label for='overview-checkbox'>
+
+            <div id="overview" class='options-menu disabled'>
+
+                <img src="imagens/icon/overview.svg" alt="">
+
+                <span>
+                    Overview
+                </span>
+
+                <input type="checkbox" name="" id="overview-checkbox">
+
+            </div>
+
+        </label>
+
+        <label for='tickets-checkbox'>
+
+            <div id="tickets" class='options-menu active'>
+
+                <img src="imagens/icon/tickets.svg" alt="">
+
+                <span>
+                    Tickets
+                </span>
+
+                <input type="checkbox" name="" id="tickets-checkbox">
+
+            </div>
+
+        </label>
+
+    </nav>
 
 
 
-
-
+    <script src="scripts.js"></script>
 </body>
 </html>
