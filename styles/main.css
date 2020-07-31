@@ -3,13 +3,26 @@
     padding: 0;
 }
 body {
-    font-family: 'Mulish', sans-serif;
-
     display: flex;
-
     background: #f7f8fc;
 }
 
 #painel-global {
     width: calc(100vw - 255px);
+}
+
+h1,h2,h3,h4,h5,h6 { /*Bold*/
+    font-family: muli,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+span { /*Regular*/
+    font-family: muli,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+p { /*Semi-bold*/
+    font-family: muli,sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
