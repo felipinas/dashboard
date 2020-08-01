@@ -5,6 +5,8 @@
 body {
     display: flex;
     background: #f7f8fc;
+
+    position: relative;
 }
 
 #painel-global {
@@ -25,4 +27,52 @@ p { /*Semi-bold*/
     font-family: muli,sans-serif;
     font-weight: 600;
     font-style: normal;
+}
+.pointer {
+    cursor: pointer;
+}
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+.tickets-details {
+    width: 440px;
+    margin-left: 32px;
+
+    display: flex;
+    align-items: center;
+}
+
+.customer-name {
+    width: 208px;
+}
+.date {
+    width: 140px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.priority {
+    width: 104px;
+}
+
+.user-pic-ticket {
+    width: 44px;
+    height: 44px;
+    margin-right: 24px;
+
+    border-radius: 50%;
+
+    background: gray;
+    opacity: 0.4;
+}
+
+.red {
+    background-color: #f12b2c;
+}
+.yellow {
+    background-color: #fec400;
+}
+.green {
+    background-color: #29cc97;
 }
