@@ -1,60 +1,72 @@
-#menu {
+nav {
     width: 255px;
 
     background-color: #363740;
 }
 
-#div-logo {
+/*container w/ logo and title*/
+
+#logo-container {
     display: flex;
     align-items: center;
+    justify-content: center;
 
-    margin-top: 37px;
-    margin-bottom: 59px;
-}
-#div-logo img {
-    margin-left: 32px;
-}
-#div-logo h1 {
-    margin: 0px 0px 0px 12px;
-    font-size: 19px;
-    letter-spacing: 0.6px;
+    width: 100%;
 
-    opacity: 0.7;
+    padding-top: 37px;
+    padding-bottom: 59px;  
+}
+#logo-container img {
+    margin-right: 12px;
+}
+#logo-container h1 {
     color: #a4a6b3;
+    opacity: 0.7;
+    font-size: 19px;
+    letter-spacing: 0.4px;
 }
 
-.option-menu {
-    display: flex;
-    align-items: center;
+/*global configs to menu options*/
 
+.options-nav {
+    width: 100%;
     height: 56px;
-    font-size: 16px;
-    letter-spacing: 0.2px;
+
     color: #dde2ff;
 
-    box-sizing: border-box;
+    display: flex;
+    align-items: center;
 
     cursor: pointer;
 
-    transition: all 0.3s;
+    border-left: 3px solid transparent;
 }
-.option-menu img {
+.options-nav img {
     margin-left: 32px;
-    margin-right: 24px; 
-
-    height: 16px;
+    margin-right: 24px;
+}
+.options-nav span {
+    font-size: 16px;
+    letter-spacing: 0.2px;
 }
 
-.active {
-    background-color: rgba(159, 162, 180, 0.08);
-    border-left: solid 3px #dde2ff;
+/*active and disabled classes of menu options*/
+
+.active-option {
+    background: rgb(159, 162, 180, 0.08);
+
+    border-left: 3px solid #dde2ff;
 }
-.disabled {
-    border-left: solid 3px #dde2ff00;
+.disabled-option {
     opacity: 0.4;
+
+    transition: 0.3s;
 }
-.disabled:hover {
-    background-color: rgba(159, 162, 180, 0.08);
-    border-left: solid 3px #dde2ff;
+.disabled-option:hover {
+    background: rgb(159, 162, 180, 0.08);
     opacity: 1;
+
+    border-left: 3px solid #dde2ff;
+
+    color: #dde2ff;
 }

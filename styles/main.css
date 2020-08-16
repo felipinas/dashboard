@@ -1,78 +1,30 @@
 * {
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box;
 }
 body {
     display: flex;
-    background: #f7f8fc;
-
-    position: relative;
-}
-
-#painel-global {
-    width: calc(100vw - 255px);
 }
 
 h1,h2,h3,h4,h5,h6 { /*Bold*/
-    font-family: muli,sans-serif;
+    font-family: "Mulish",sans-serif;
     font-weight: 700;
     font-style: normal;
 }
-span { /*Regular*/
-    font-family: muli,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 p { /*Semi-bold*/
-    font-family: muli,sans-serif;
+    font-family: "Mulish",sans-serif;
     font-weight: 600;
     font-style: normal;
 }
-.pointer {
-    cursor: pointer;
-}
-.icon {
-    width: 16px;
-    height: 16px;
+span { /*Regular*/
+    font-family: "Mulish",sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.tickets-details {
-    width: 440px;
-    margin-left: 32px;
-
+.flex {
     display: flex;
     align-items: center;
-}
-
-.customer-name {
-    width: 208px;
-}
-.date {
-    width: 140px;
-    margin-left: 8px;
-    margin-right: 8px;
-}
-.priority {
-    width: 104px;
-}
-
-.user-pic-ticket {
-    width: 44px;
-    height: 44px;
-    margin-right: 24px;
-
-    border-radius: 50%;
-
-    background: gray;
-    opacity: 0.4;
-}
-
-.red {
-    background-color: #f12b2c;
-}
-.yellow {
-    background-color: #fec400;
-}
-.green {
-    background-color: #29cc97;
 }

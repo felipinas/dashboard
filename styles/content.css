@@ -1,0 +1,161 @@
+main {
+    width: calc(100vw - 255px);
+
+    background-color: #f7f8fc;
+}
+
+/*principal header*/
+
+header {
+    width: 100%;
+
+    margin-top: 30px;
+    margin-bottom: 58px;
+
+    padding-left: 30px;
+    padding-right: 33px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #252733;
+}
+header #profile-items {
+    display: flex;
+    align-items: center;
+}
+
+header #icon-search {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image: url(../imagens/icon/search.svg);
+    
+    cursor: pointer;
+    transition: 0.4s;
+}
+header #icon-search:hover {
+    background-image: url(../imagens/icon/search-hover.svg)
+}
+
+header #icon-notifications {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image: url(../imagens/icon/new.svg);
+
+    margin: 0px 24px;
+
+    cursor: pointer;
+    transition: 0.4s;
+}
+header #icon-notifications:hover {
+    background-image: url(../imagens/icon/new-hover.svg)
+}
+
+header hr {
+    border: none;
+    height: 38px;
+    width: 0.8px;
+
+    background: gray;
+    opacity: 0.15;
+
+    margin-right: 24px;
+}
+
+header p {
+    font-size: 14px;
+    color: #252733;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+
+    font-weight: 700;
+}
+
+header #profile-picture {
+    width: 44px;
+    height: 44px;
+
+    background: gray;
+    opacity: 0.5;
+    border-radius: 50%;
+
+    margin-left: 14px;
+ 
+    cursor: pointer;
+    transition: 0.4s;
+}
+header #profile-picture:hover {
+    opacity: 0.3;
+}
+
+/*big white rectangle*/
+
+#principal-content {
+    width: calc(100% - 63px);
+    height: 942px;
+    background: white;
+
+    margin: 0px auto 20px auto;
+
+    border: 1px solid #dfe0eb;
+    border-radius: 8px;
+}
+#principal-content header {
+    margin-top: 32px;
+    margin-bottom: 48px;
+    padding: 0px 32px;
+}
+
+/*div with div-sort and div-filter*/
+
+#sort-and-filter {
+    display: flex;
+    align-items: center;
+}
+#sort-and-filter p {
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #4b506d;
+}
+
+#div-sort {
+    cursor: pointer;
+}
+#icon-sort {
+    width: 16px;
+    height: 16px;
+
+    margin-right: 8px;
+
+    background-image: url(../imagens/icon/sort.svg);
+    background-repeat: no-repeat;
+
+    transition: 0.4s;
+}
+#div-sort:hover > #icon-sort {
+    background-image: url(../imagens/icon/sort-hover.svg);
+}
+
+#div-filter {
+    cursor: pointer;
+}
+#icon-filter {
+    width: 16px;
+    height: 16px;
+
+    margin: 0px 8px 0px 32px;
+
+    background-image: url(../imagens/icon/filter.svg);
+    background-repeat: no-repeat;
+
+    transition: 0.4s;
+}
+#div-filter:hover > #icon-filter {
+    background-image: url(../imagens/icon/filter-hover.svg);
+}
