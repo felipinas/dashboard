@@ -70,24 +70,23 @@ header p {
     color: #252733;
     letter-spacing: 0.2px;
     line-height: 20px;
+    margin-right: 14px;
 
     font-weight: 700;
 }
 
-header #profile-picture {
+.profile-picture {
     width: 44px;
     height: 44px;
 
     background: gray;
     opacity: 0.5;
     border-radius: 50%;
-
-    margin-left: 14px;
  
     cursor: pointer;
     transition: 0.4s;
 }
-header #profile-picture:hover {
+.profile-picture:hover {
     opacity: 0.3;
 }
 
@@ -158,4 +157,123 @@ header #profile-picture:hover {
 }
 #div-filter:hover > #icon-filter {
     background-image: url(../imagens/icon/filter-hover.svg);
+}
+
+/*Tickets details, customer name, data and priority*/
+
+#sub-header {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0px 32px 12px 32px;
+
+    border-bottom: 2px solid #DFE0EB;
+}
+#sub-header div { /*customer name, data and priority*/
+    display: flex;
+    justify-content: space-between;
+}
+#sub-header h4 {
+    font-size: 13px;
+    color: #9fa2b4;
+    letter-spacing: 0.2px;
+}
+
+.customer-name {
+    width: 215px;
+}
+.date {
+    width: 170px;
+}
+.priority {
+    width: 110px;
+}
+
+/*each ticket*/
+
+.ticket-item {
+    padding: 0px 32px;
+
+    height: 92px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    border-bottom: 1px solid #DFE0EB;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ticket-item:hover {
+    background-color: rgb(55, 81, 255, 0.04);
+}
+.ticket-item .profile-picture {
+    margin-right: 24px;
+}
+.ticket-item p {
+    margin-bottom: 4px;
+
+    font-size: 14px;
+    color: #252733;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+.ticket-item span {
+    font-size: 12px;
+    color: #c5c7cd;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+}
+
+.ticket-detail {
+    display: flex;
+}
+
+.right-infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.priority {
+    display: flex;
+}
+
+.icon-more {
+    width: 24px;
+    height: 24px;
+    background-image: url(../imagens/icon/more.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+}
+.icon-more:hover {
+    background-image: url(../imagens/icon/more-hover.svg);
+}
+
+/*rec about the priority*/
+
+.red {
+    background-color: #f12b2c;
+}
+.green {
+    background-color: #29cc97;
+}
+.yellow {
+    background-color: #fec400;
+}
+.priority-status {
+    padding: 5px 12px;
+    border-radius: 100px;
+    color: white;
+
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/*footer inside of big rec white*/
+
+footer {
+    width: 100%;
+    height: 72px;
 }
